@@ -7,10 +7,10 @@ import './Login.css';
 import Spinner from './Spinner.js';
 import { Link } from 'react-router-dom';
 
-const Login = (props) => {
+const Login = ({handlesetLoggedInTrue}) => {
 
     const [credentials, setCredentials] = useState({ userName: "", password: "" });
-
+  
     // For updating the details of user on account section and navbar upon new login.
     const context = useContext(UserContext);
     const { userLoad , setuserLoad} = context;
@@ -43,6 +43,8 @@ const Login = (props) => {
             console.log(json.password);
             localStorage.setItem('userName', json.userName);
             localStorage.setItem('password', json.password);
+            if(handlesetLoggedInTrue)
+            handlesetLoggedInTrue(true)
             navigate("/");
         }
         setuserLoad(false);

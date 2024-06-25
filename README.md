@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# Tejas Inventory Managemnt
+--------------------------------------
+The Real-Time Audio and Textual Notes Application project aims to create a seamless and efficient platform for managing notes, leveraging the strengths of Spring Boot and ReactJS. By integrating robust user authentication, real-time synchronization, and reliable storage solutions, the application ensures a high-quality user experience. With features like instant updates, secure data handling, and an intuitive interface, this application is poised to enhance productivity and streamline the note-taking process for users. The comprehensive implementation plan, including rigorous testing and scalable deployment strategies, ensures that the application will be reliable, secure, and maintainable, meeting the diverse needs of its users effectively.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--------------------------------------
 
-## Available Scripts
+# Backend SpringBoot
 
-In the project directory, you can run:
 
-### `npm start`
+## Initializer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Minimal [Spring Boot](http://projects.spring.io/) sample app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements
 
-### `npm test`
+For building and running the application you need:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [JDK 22]
+- [Maven Build Tool]
+- [MongoDB Server]
 
-### `npm run build`
+## Create Database in Local System 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   $ create database intern_project;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the application locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `src/main/java/BackendApplication.java` class from your IDE.
 
-### `npm run eject`
+Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+mvn spring-boot:run
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-----------------------------------------------------------
+# Backend Nodejs
+---
+## Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Node
+- #### Node installation on Windows
 
-## Learn More
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- #### Node installation on Ubuntu
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  You can install nodejs and npm easily with apt install, just run the following commands.
 
-### Code Splitting
+      $ sudo apt install nodejs
+      $ sudo apt install npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-### Analyzing the Bundle Size
+If the installation was successful, you should be able to run the following command.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    $ node --version
+    v8.11.3
+  
 
-### Making a Progressive Web App
+If you need to update `npm`, you can make it using `npm`!  After running the following command, just open again the command line and be happy.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    $ npm install npm -g
 
-### Advanced Configuration
+###
+### Yarn installation
+  After installing node, this project will need yarn too, so just run the following command.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+      $ npm install -g yarn
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Install
 
-### `npm run build` fails to minify
+    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
+    $ cd PROJECT_TITLE
+    $ yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Create Database in Local System 
+
+    $ create database tejas_app;
+    
+
+## Running the project
+
+    $ npm start
+
+---
+# Front-end ReactJs
+
+## What is the use of this Repo
+
+This Project is a Simple ReactJS Project which demonstrates the following
+1. Creating a Component in React
+2. Making HTTP calls
+3. Communicating between parent and child component
+4. Using Basic Routing in React
+
+
+
+
+## Prerequisites
+
+### Install Node JS
+Refer to https://nodejs.org/en/ to install nodejs
+
+### Install create-react-app
+Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+
+```bash
+npm install -g create-react-app
+```
+
+## Cloning and Running the Application in local
+
+Clone the project into local
+
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+
+```bash
+npm install
+```
+
+In order to run the application Type the following command
+
+```bash
+npm run start
+```
+
+The Application Runs on **localhost:3000**
+
+#### HTTP client
+
+Aysnc - Await fetch APIs library is used to make HTTP Calls.
+
+## Resources
+
+**ReactJS** : Refer to https://reactjs.org/ to understand the concepts of ReactJS

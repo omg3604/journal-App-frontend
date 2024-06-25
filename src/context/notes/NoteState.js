@@ -68,7 +68,13 @@ const NoteState = (props) => {
         let newnotes = notes.filter((note) => {
             return note._id !== id;
         });
-        setNotes(newnotes);
+
+        if(response.ok){
+            let newnotes = notes.filter((note) => {
+                return note._id !== id;
+            });
+            setNotes(newnotes);
+        }
         // getNotes();
         setnoteLoad(false);
     }
