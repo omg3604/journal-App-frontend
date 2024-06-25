@@ -1,4 +1,4 @@
-# Tejas Inventory Managemnt
+# TejNotes - Note Management Application
 --------------------------------------
 The Real-Time Audio and Textual Notes Application project aims to create a seamless and efficient platform for managing notes, leveraging the strengths of Spring Boot and ReactJS. By integrating robust user authentication, real-time synchronization, and reliable storage solutions, the application ensures a high-quality user experience. With features like instant updates, secure data handling, and an intuitive interface, this application is poised to enhance productivity and streamline the note-taking process for users. The comprehensive implementation plan, including rigorous testing and scalable deployment strategies, ensures that the application will be reliable, secure, and maintainable, meeting the diverse needs of its users effectively.
 
